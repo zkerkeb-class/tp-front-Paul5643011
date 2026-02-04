@@ -1,0 +1,68 @@
+.poke-card{
+    /* background-color: red; */
+    /* background-color: #7B4B94; */
+    border-radius: 4px;
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+    min-height: 250px;
+    cursor: pointer;
+}
+
+.poke-title{
+    color: white;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.poke-card-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+    padding-right: 40px;
+    width: fit-content;
+    clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0 100%);
+    background-color: #6A3B7A;
+}
+
+
+.poke-image{
+    width: 100px;
+    height: 100px;
+}
+
+.poke-image-background{
+    background-color: blanchedalmond;
+    margin:8px;
+}
+
+.poke-type-font{
+    font-size: 10px;
+}
+
+.poke-stat-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8px;
+}
+
+/* Couleurs par type de Pokémon */
+.poke-card-header.poke-type-normal { background-color: #A8A878; }
+.poke-card-header.poke-type-fire { background-color: #F08030; }
+.poke-card-header.poke-type-water { background-color: #6890F0; }
+.poke-card-header.poke-type-grass { background-color: #78C850; }
+.poke-card-header.poke-type-electric { background-color: #F8D030; }
+.poke-card-header.poke-type-ice { background-color: #98D8D8; }
+.poke-card-header.poke-type-fighting { background-color: #C03028; }
+.poke-card-header.poke-type-poison { background-color: #A040A0; }
+.poke-card-header.poke-type-ground { background-color: #E0C068; }
+.poke-card-header.poke-type-flying { background-color: #A890F0; }
+.poke-card-header.poke-type-psychic { background-color: #F85888; }
+.poke-card-header.poke-type-bug { background-color: #A8B820; }
+.poke-card-header.poke-type-rock { background-color: #B8A038; }
+.poke-card-header.poke-type-ghost { background-color: #705898; }
+.poke-card-header.poke-type-dragon { background-color: #7038F8; }
+.poke-card-header.poke-type-dark { background-color: #705848; }
+.poke-card-header.poke-type-steel { background-color: #B8B8D0; }
+.poke-card-header.poke-type-fairy { background-color: #EE99AC; }

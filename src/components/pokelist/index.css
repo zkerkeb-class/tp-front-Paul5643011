@@ -1,0 +1,11 @@
+.poke-list-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.poke-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px;
+}
