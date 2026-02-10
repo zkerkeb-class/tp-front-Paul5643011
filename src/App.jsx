@@ -1,31 +1,16 @@
-import { useEffect } from 'react';
 import './App.css'
+import { Routes, Route } from 'react-router-dom';
 import Pokelist from './components/pokelist'
-import { Link, useNavigate } from 'react-router'
+import PokemonDetail from './pages/PokemonDetail'
 
 function App() {
-  const navigate = useNavigate();
-  console.log(navigate);
-
-  useEffect(() => {
-    console.log("App component mounted");
-
-    // setTimeout(() =>
-      // redirectToDetails()
-      // , 5000);
-
-  }, []);
-
-  const redirectToDetails = () => {
-    navigate('/pokemonDetails');
-  }
 
   return (
-    <div>
-
-      <Link to="/pokemonDetails">Voir les détails du Pokémon</Link>
-      <Pokelist></Pokelist>
-    </div>
+    <Routes>
+      <Route path="/" element={<Pokelist />} />
+      <Route path="/pokemon" element={<PokemonDetail />} />
+      <Route path="/pokemon/:id" element={<PokemonDetail />} />
+    </Routes>
   )
 
 }
